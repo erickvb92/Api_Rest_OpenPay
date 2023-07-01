@@ -31,7 +31,8 @@ import com.openpay.apirestopenpay.service.BitacoraService;
 import com.openpay.apirestopenpay.serviceImpl.ServiceRepositoryImpl;
 
 @RestController
-@CrossOrigin(origins = "*")
+
+@CrossOrigin(origins= {"*"}, maxAge = 4800, allowCredentials = "false" )
 @RequestMapping("/api/openpay/jar/")
 public class RestApiControllerMarvel {
 	

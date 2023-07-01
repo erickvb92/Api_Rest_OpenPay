@@ -29,8 +29,7 @@ import com.openpay.apirestopenpay.model.JwtResponse;
 import com.openpay.apirestopenpay.model.modelResponseGeneric;
 import com.openpay.apirestopenpay.serviceImpl.ServiceRepositoryImpl;
 
-
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins= {"*"}, maxAge = 4800, allowCredentials = "false" )
 @RestController
 public class JwtAuthenticationController {
 
